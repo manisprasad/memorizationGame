@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="game-info fixed top-0 w-full border-2 border-slate-700 text-center z-10">
+        <div class="move">Moves : 25</div>
+    </div>
+    <main>
+        <div class="flex items-center justify-center h-screen mt-10">
+            <div class="container w-auto  grid grid-cols-3 gap-5 border-2 border-black bg-slate-500 p-5 sm:grid-cols-4">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        
+    </main>
+    <div class="result hidden flex-col justify-center absolute left-1/2 top-1/2  -translate-x-1/2 -translate-Y-1/2 border-2 border-black  p-6 w-auto h-auto">
+        <div class="timetaken text-xl font-bold">2:3</div>
+        <div class="movetaken text-xl">9</div>
+        <div class="out-of-move font-bold text-red-700 text-3xl">Oh no You're Out of move💔</div>
+        <!-- <button class="res-btn text-center w-auto h-auto p-2 text-xl bg-green-500" type="submit">Restart</button> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
