@@ -22,10 +22,12 @@ const getRandomEmojis = () => {
 };
 
 // Function to shuffle an array
-const shuffleArray = (array) => {
-    for (let index = array.length - 1; index > 0; index--) {
-        const j = Math.floor(Math.random() * (index + 1));
-        [array[index], array[j]] = [array[j], array[index]];
+const shuffleArray = (array, rounds = 3) => {
+    for (let round = 0; round < rounds; round++) {
+        for (let index = array.length - 1; index > 0; index--) {
+            const j = Math.floor(Math.random() * (index + 1));
+            [array[index], array[j]] = [array[j], array[index]];
+        }
     }
 };
 
